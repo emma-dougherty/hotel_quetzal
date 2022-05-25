@@ -1,5 +1,11 @@
+body{
+  margin: 0px;
+}
+
 .main-container{
-  background-image: url("./images/hotel_q_hero2.jpg");
-  background-repeat: no-repeat;
-  background-size: contain;
+  background-image: url("./images/h-tile.jpg");
+  background-repeat: repeat;
+  width: auto;
+  min-height: 700px;
+  
 }

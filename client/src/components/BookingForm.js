@@ -19,6 +19,7 @@ const BookingForm = ({addBooking}) => {
 
     const onSubmit = (e) =>{
         e.preventDefault();
+        formData.check_in_status = false
         postBooking(formData).then((data)=>{
             addBooking(data);
         })
