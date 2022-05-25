@@ -21,11 +21,11 @@ const baseURL = 'http://localhost:9000/'
     }
 
 
-    export const updateBooking = (id) => {
-        return fetch(baseURL + id, {
-            method: 'PUT'
-        })
-    }
+    // export const updateBooking = (id) => {
+    //     return fetch(baseURL + id, {
+    //         method: 'PUT'
+    //     })
+    // }
     
     export const checkInBooking = (payload) => {
 
@@ -37,4 +37,14 @@ const baseURL = 'http://localhost:9000/'
         .then(res => res.json())
 
     }
+
+    // export const checkInBooking = (data, id) => {
+    //     delete data._id
+    //     return fetch(baseURL + id, {
+    //         method: 'PATCH',
+    //         body: JSON.stringify(data),
+    //         headers: { 'Content-Type': 'application/json' }
+    //     })
+    //     .then(res => res.json())
+    // }
     
